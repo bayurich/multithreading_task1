@@ -18,7 +18,6 @@ public class Main {
             Thread.sleep(15000);
             threadGroup.interrupt();
             System.out.println("Завершаю все потоки.");
-            Thread.sleep(3);
             threadGroup.destroy();
         } catch (InterruptedException e) {
             System.out.println("Exception: " + e.getMessage());
